@@ -1,0 +1,14 @@
+:root {
+  --base: 4px;
+  --radius: var(--base);
+  --xxs: var(--base); /* 4px */
+  --xs: calc(2 * var(--base)); /* 8px */
+  --sm: calc(3 * var(--base)); /* 12px */
+  --md: calc(4 * var(--base)); /* 16px */
+  --lg: calc(5 * var(--base)); /* 20px */
+  --xl: calc(6 * var(--base)); /* 24px */
+  --xxl: calc(7 * var(--base)); /* 28px */
+
+
+  --transition-default: all .3s cubic-bezier(.4,.01,.165,.99);
+}

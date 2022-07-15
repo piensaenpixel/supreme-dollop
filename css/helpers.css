@@ -1,0 +1,261 @@
+/* typography */
+
+.h-fontSmall-regular {
+  font-size: var(--typography-body-small-regular-font-size);
+  font-weight: var(--typography-body-small-regular-font-weight);
+  line-height: var(--typography-body-small-regular-line-height);
+}
+
+.h-fontSmall-semi {
+  font-size: var(--typography-body-small-semibold-font-size);
+  font-weight: var(--typography-body-small-semibold-font-weight);
+  line-height: var(--typography-body-small-semibold-line-height);
+}
+
+.h-fontMedium-regular {
+  font-size: var(--typography-body-medium-regular-font-size);
+  font-weight: var(--typography-body-medium-regular-font-weight);
+  line-height: var(--typography-body-medium-regular-line-height);
+}
+.h-fontMedium-semi {
+  font-size: var(--typography-body-medium-semibold-font-size);
+  font-weight: var(--typography-body-medium-semibold-font-weight);
+  line-height: var(--typography-body-medium-semibold-line-height);
+}
+
+.h-fontDefault-regular {
+  font-size: var(--typography-body-default-regular-font-size);
+  font-weight: var(--typography-body-default-regular-font-weight);
+  line-height: var(--typography-body-default-regular-line-height);
+}
+.h-fontDefault-semi {
+  font-size: var(--typography-body-default-semibold-font-size);
+  font-weight: var(--typography-body-default-semibold-font-weight);
+  line-height: var(--typography-body-default-semibold-line-height);
+}
+
+.h-fontLarge-regular {
+  font-size: var(--typography-body-large-regular-font-size);
+  font-weight: var(--typography-body-large-regular-font-weight);
+  line-height: var(--typography-body-large-regular-line-height);
+}
+.h-fontLarge-semi {
+  font-size: var(--typography-body-large-semibold-font-size);
+  font-weight: var(--typography-body-large-semibold-font-weight);
+  line-height: var(--typography-body-large-semibold-line-height);
+}
+
+
+.h-titleSmall-regular {
+  font-size: var(--typography-header-small-regular-font-size);
+  font-weight: var(--typography-header-small-regular-font-weight);
+  line-height: var(--typography-header-small-regular-line-height);
+}
+.h-titleSmall-semi {
+  font-size: var(--typography-header-small-semibold-font-size);
+  font-weight: var(--typography-header-small-semibold-font-weight);
+  line-height: var(--typography-header-small-semibold-line-height);
+}
+.h-titleMedium-regular {
+  font-size: var(--typography-header-medium-regular-font-size);
+  font-weight: var(--typography-header-medium-regular-font-weight);
+  line-height: var(--typography-header-medium-regular-line-height);
+}
+.h-titleMedium-semi {
+  font-size: var(--typography-header-medium-semibold-font-size);
+  font-weight: var(--typography-header-medium-semibold-font-weight);
+  line-height: var(--typography-header-medium-semibold-line-height);
+}
+.h-titleDefault-regular {
+  font-size: var(--typography-header-default-regular-font-size);
+  font-weight: var(--typography-header-default-regular-font-weight);
+  line-height: var(--typography-header-default-regular-line-height);
+}
+.h-titleDefault-semi {
+  font-size: var(--typography-header-default-semibold-font-size);
+  font-weight: var(--typography-header-default-semibold-font-weight);
+  line-height: var(--typography-header-default-semibold-line-height);
+}
+.h-titleLarge-regular {
+  font-size: var(--typography-header-large-regular-font-size);
+  font-weight: var(--typography-header-large-regular-font-weight);
+  line-height: var(--typography-header-large-regular-line-height);
+}
+.h-titleLarge-semi {
+  font-size: var(--typography-header-large-semibold-font-size);
+  font-weight: var(--typography-header-large-semibold-font-weight);
+  line-height: var(--typography-header-large-semibold-line-height);
+}
+
+.h-txtRight {
+  text-align: right;
+}
+.h-txtLeft {
+  text-align: left;
+}
+.h-txtCenter {
+  text-align: center;
+}
+
+
+
+/* flex stuff */
+.full-spaceCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 10;
+}
+.full-spaceCenter > * {
+  flex-shrink: 0;
+}
+
+.allow-shrink {
+  flex-shrink: 1;
+}
+.no-shrink {
+  flex-shrink: 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-top {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.flex-betweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-betweenStart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-betweenEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+
+/* mix */
+.h-block {
+  display: block;
+}
+.h-maxShort {
+   max-width: calc(var(--xs) * 80); /* 640px */
+   width: 100%;
+}
+.h-maxShorter {
+   max-width: calc(var(--xs) * 68); /* 544px */
+   width: 100%;
+}
+.h-overflow {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.h-fullHeight {
+  height: 100%;
+}
+.h-fullWidth {
+  width: 100%;
+}
+
+.h-radius {
+  border-radius: var(--radius);
+}
+
+.h-clickable {
+ cursor: pointer;
+}
+.h-link {
+  color:  var(--color-global-primary);
+}
+  .h-link:hover {
+    text-decoration: underline;
+  }
+.h-hidden {
+ display: none;
+}
+ 
+.h-pr {
+  position: relative;
+}
+.h-pa {
+  position: absolute;
+}
+.h-upper {
+  text-transform: uppercase;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+
+/* colors */
+.h-colorText-primary {
+  color: var(--color-text-primary);
+}
+.h-colorText-secondary {
+  color: var(--color-text-secondary);
+}
+.h-colorText-tertiary{
+  color: var(--color-text-tertiary);
+}
+
+
+.h-whiteBackground {
+  background: var(--color-global-white);
+}
+
+.h-greyBackground-medium {
+  background: var(--color-background-medium);
+}
+
+.h-greyBackground-dark {
+  background: var(--color-text-primary:);
+}
+
+
+/* animations */
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(1);
+  }
+  33%{    
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);    
+  }
+}

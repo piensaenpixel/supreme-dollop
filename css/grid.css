@@ -1,0 +1,114 @@
+.container {
+  display: grid; 
+  gap: 0px var(--xs); 
+}
+  .is-l {
+    gap: 0px var(--sm); 
+  }
+
+.container--1 {
+  grid-template-columns: 1fr; 
+}
+.container-menu {
+  grid-template-columns: 240px 1fr; 
+}
+.container-menu.is-close {
+  grid-template-columns: 48px 1fr; 
+}
+.container--2 {
+  grid-template-columns: repeat(2, 1fr); 
+}
+.container--3 {
+  grid-template-columns: repeat(3, 1fr); 
+}
+.container--4 {
+  grid-template-columns: repeat(4, 1fr); 
+}
+.container--5 {
+  grid-template-columns: repeat(5, 1fr); 
+}
+.container--6 {
+  grid-template-columns: repeat(6, 1fr); 
+}
+.container--7 {
+  grid-template-columns: repeat(7, 1fr); 
+}
+.container--8 {
+  grid-template-columns: repeat(8, 1fr); 
+}
+.container--9 {
+  grid-template-columns: repeat(9, 1fr); 
+}
+.container--10 {
+  grid-template-columns: repeat(10, 1fr); 
+}
+.container--11 {
+  grid-template-columns: repeat(11, 1fr); 
+}
+.container--12 {
+  grid-template-columns: repeat(12, 1fr); 
+}
+.container--13 {
+  grid-template-columns: repeat(13, 1fr); 
+}
+.container--14 {
+  grid-template-columns: repeat(14, 1fr); 
+}
+.container--15 {
+  grid-template-columns: repeat(15, 1fr); 
+}
+.container--16 {
+  grid-template-columns: repeat(16, 1fr); 
+}
+
+.container--1-15 {
+  grid-template-columns: 1fr 15fr; 
+}
+.container--15-1 {
+  grid-template-columns: 15fr 1fr; 
+}
+
+.container--2-14 {
+  grid-template-columns: 2fr 14fr; 
+}
+.container--14-2 {
+  grid-template-columns: 14fr 2fr; 
+}
+
+.container--3-13 {
+  grid-template-columns: 3fr 13fr; 
+}
+.container--13-3 {
+  grid-template-columns: 13fr 3fr; 
+}
+
+.container--4-12 {
+  grid-template-columns: 4fr 12fr; 
+}
+.container--12-4 {
+  grid-template-columns: 12fr 4fr; 
+}
+
+.container--5-11 {
+  grid-template-columns: 5fr 11fr; 
+}
+.container--11-5 {
+  grid-template-columns: 11fr 5fr; 
+}
+
+.container--6-10 {
+  grid-template-columns: 6fr 10fr; 
+}
+.container--10-6 {
+  grid-template-columns: 10fr 6fr; 
+}
+
+.container--7-9 {
+  grid-template-columns: 6fr 9fr; 
+}
+.container--9-7 {
+  grid-template-columns: 9fr 7fr; 
+}
+.container--8-8 {
+  grid-template-columns: 8fr 8fr; 
+}
