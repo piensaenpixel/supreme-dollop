@@ -12,9 +12,10 @@
   <link rel="stylesheet" type="text/css" href="css/variables.css">
   <link rel="stylesheet" type="text/css" href="css/tokens.css">
   <link rel="stylesheet" type="text/css" href="css/spacing.css">
-  <link rel="stylesheet" type="text/css" href="css/helpers.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/helpers.css">
+
 </head>
 <body>
   <div class="p-2 h-fullHeight">
@@ -259,6 +260,103 @@
           </nav>
           <div class="p-2 h-fullWidth h-borderTop h-borderMedium">
                 <div class="flex-betweenCenter h-clickable h-pr">
+                  <div class="dropdown  dropdown-small h-pa h-whiteBackground h-boxShadow-soft h-border h-borderMedium h-radius" style="bottom: calc(100% + 4px); left: 0">
+                    <div class="p-2">
+                      <p class="mb-1 h-colorText-tertiary h-fontMedium-regular">lmcgregor@company.com</p>
+                      <div class="flex-betweenCenter h-clickable h-pr">
+                        <div class="flex">
+                          <span class="p-1 h-radius flex h-fontMedium-regular h-colorText-white" style="background: #EF5DA8">
+                            LM
+                          </span>
+                          <div class="ml-1">
+                            <h2 class="h-fontMedium-semi h-colorText-primary mb-0">Louis McGregor</h2>
+                            <p class="h-fontSmall-regular h-colorText-tertiary">Personal Space</p>
+                          </div>
+                        </div>
+                        <div class="flex">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.78047 7.99999L5.48047 4.69999L6.42314 3.75732L10.6658 7.99999L6.42314 12.2427L5.48047 11.3L8.78047 7.99999Z" fill="#717D89"/>
+                            </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="h-greyBackground-light">
+                      <li class="p-2 h-borderBottom h-borderMedium flex-betweenCenter">
+                          <p class="h-fontMedium-regular h-fontMedium-regular">Show help</p>
+                          <ul class="segmented h-fontMedium-regular h-greyBackground-medium">
+                            <li class="segmented-item">
+                              <button class="segmented-link h-fontMedium-regular">
+                                <input type="radio" name="view" value="all" id="all"  class="segmented-input" />
+                                <label class="segmented-label" for="all">
+                                    Yes
+                                </label>
+                              </button>
+                            </li>
+
+                            <li class="segmented-item">
+                              <button class="segmented-link is-active h-fontMedium-regular">
+                                <input type="radio" name="view" value="push" id="push" class="segmented-input" />
+                                <label class="segmented-label" for="push">
+                                    No
+                                </label>
+                              </button>
+                            </li>
+                          </ul>
+                      </li>
+                      <li class="p-2 h-borderBottom h-borderMedium">
+                        <h3 class="h-fontMedium-regular h-colorText-tertiary mb-1">User Settings</h3>
+                        <ul class="h-fontMedium-regular">
+                          <li><a href="#" class="pv-1 h-block h-colorText-primary">Invite a TeamMate</a></li>
+                          <li><a href="#" class="pv-1 h-block h-colorText-primary">Get Started</a></li>
+                          <li><a href="#" class="pv-1 h-block h-colorText-primary">User preferences</a></li>
+                        </ul>
+                      </li>
+                      <li class="p-2 h-borderBottom h-borderMedium flex-betweenCenter">
+                          <p class="h-fontMedium-regular h-fontMedium-regular">Theme</p>
+                          <ul class="segmented h-fontMedium-regular h-greyBackground-medium">
+                            <li class="segmented-item">
+                              <button class="segmented-link  is-active h-fontMedium-regular">
+                                <input type="radio" name="view" value="all" id="all"  class="segmented-input" />
+                                <label class="segmented-label" for="all">
+                                    Light
+                                </label>
+                              </button>
+                            </li>
+
+                            <li class="segmented-item">
+                              <button class="segmented-link h-fontMedium-regular">
+                                <input type="radio" name="view" value="push" id="push" class="segmented-input" />
+                                <label class="segmented-label" for="push">
+                                    Dark
+                                </label>
+                              </button>
+                            </li>
+                          </ul>
+                      </li>
+                      <li class="p-2 flex-betweenCenter">
+                          <p class="h-fontMedium-regular h-fontMedium-regular">Show Keyboard shorcuts</p>
+                          <ul class="segmented h-fontMedium-regular h-greyBackground-medium">
+                            <li class="segmented-item">
+                              <button class="segmented-link is-active h-fontMedium-regular">
+                                <input type="radio" name="view" value="all" id="all"  class="segmented-input" />
+                                <label class="segmented-label" for="all">
+                                    Yes
+                                </label>
+                              </button>
+                            </li>
+
+                            <li class="segmented-item">
+                              <button class="segmented-link  h-fontMedium-regular">
+                                <input type="radio" name="view" value="push" id="push" class="segmented-input" />
+                                <label class="segmented-label" for="push">
+                                    No
+                                </label>
+                              </button>
+                            </li>
+                          </ul>
+                      </li>
+                    </ul>
+                  </div>
                   <div class="flex">
                     <span class="p-1 h-radius flex h-fontMedium-regular h-colorText-white" style="background: #EF5DA8">
                       LM
