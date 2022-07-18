@@ -355,14 +355,17 @@ body {
   }
 
 
-/* Layout left */
-.menu {
-  width: 240px;
-  transition: var(--transition-default);
+
+.dropdown {
+  display: none;
 }
-.menu.is-collapsed {
-  width: 56px;
+
+.dropdown-trigger:hover .dropdown {
+  display: block;
 }
+
+
+
 
 
 /* menu */
