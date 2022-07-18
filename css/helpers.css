@@ -202,6 +202,9 @@
 .h-clickable {
  cursor: pointer;
 }
+.h-cursorDefault {
+ cursor: default;
+}
 .h-link {
   color:  var(--color-global-primary);
 }
