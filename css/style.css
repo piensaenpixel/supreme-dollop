@@ -374,11 +374,11 @@ body {
   position: absolute;
   background-color: #ECF5FE;
   z-index: 0;
-  transition: .3s ease top, opacity cubic-bezier(.4,.01,.165,.99);
+  transition: var(--transition-default);
   opacity: 0;
   border-radius: 4px;
   width: 224px;
-  height: 48px;
+  height: 40px;
   left: 8px;
 }
 .overlay.active {

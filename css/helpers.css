@@ -232,6 +232,9 @@
 .h-colorText-tertiary{
   color: var(--color-text-tertiary);
 }
+.h-colorText-white{
+  color: var(--color-text-white);
+}
 
 
 .h-whiteBackground {
@@ -244,6 +247,54 @@
 
 .h-greyBackground-dark {
   background: var(--color-text-primary:);
+}
+
+.h-greenBackground {
+  background: #28A865; /* create token */
+}
+
+/* borders */
+.h-border {
+  border-width:  1px;
+}
+.h-borderV {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.h-borderH {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.h-borderTop {
+  border-top-width: 1px;
+}
+.h-borderRight {
+  border-top-width: 1px;
+}
+.h-borderLeft {
+  border-left-width: 1px;
+}
+.h-borderRight {
+  border-right-width: 1px;
+}
+.h-borderHard {
+  border-color: var(--color-border-hard);
+  border-top-style: solid;
+}
+.h-borderMedium {
+  border-color: var(--color-border-medium);
+  border-top-style: solid;
+}
+.h-borderLight {
+  border-color: var(--color-border-light);
+  border-top-style: solid;
+}
+
+
+/* shadows */
+.h-boxShadow-soft {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
 }
 
 

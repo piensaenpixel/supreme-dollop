@@ -8,12 +8,15 @@
 
 .container--1 {
   grid-template-columns: 1fr; 
+
 }
 .container-menu {
   grid-template-columns: 240px 1fr; 
 }
-.container-menu.is-close {
-  grid-template-columns: 48px 1fr; 
+.container-menu.is-collapse {
+  grid-template-columns: 48px 1fr;
+  transition: all .3s cubic-bezier(.4,.01,.165,.99);
+
 }
 .container--2 {
   grid-template-columns: repeat(2, 1fr); 
