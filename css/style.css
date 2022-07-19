@@ -374,12 +374,10 @@ body {
   background: var(--color-text-primary);
 }
 .overlay {
-  position: absolute;
-  background-color: #ECF5FE;
+  background-color: var(--color-global-primary-08);
   z-index: 0;
   transition: var(--transition-default);
   opacity: 0;
-  border-radius: 4px;
   width: 224px;
   height: 40px;
   left: 8px;
