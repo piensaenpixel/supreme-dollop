@@ -8,7 +8,7 @@
   --color-global-primary-16: rgba(13, 127, 244, 0.16);
   --color-global-primary-08: rgba(13, 127, 244, 0.08);
   --color-global-destructive: #ff0000;
-  --color-text-primary: #12263a;
+  --color-text-primary: rgb(18, 38, 58);
   --color-text-secondary: rgba(18, 38, 58, 0.6);
   --color-text-tertiary: rgba(18, 38, 58, 0.4);
   --color-text-white: #ffffff;
@@ -19,6 +19,7 @@
   --color-border-destructive: #ff0000;
   --color-background-medium: #f5f5f5;
   --color-background-light: #fafafa;
+  --color-background-modal: 18, 38, 58;
   --typography-body-small-regular-font-size: 10px;
   --typography-body-small-regular-text-decoration: none;
   --typography-body-small-regular-font-family: Inter;

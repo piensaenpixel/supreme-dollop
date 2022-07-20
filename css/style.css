@@ -165,8 +165,9 @@ body {
   border-radius: var(--radius);
   transition: var(--transition-default);
   background: none;
-  padding:  var(--xs);
-  width: 100%;
+  font-family: var(--typography-body-small-regular-font-family);
+/*  padding:  var(--xs);
+*/  width: 100%;
   font-size: var(--typography-body-medium-regular-font-size);
   font-weight: var(--typography-body-medium-regular-font-weight);
   line-height: var(--typography-body-medium-regular-line-height);
@@ -189,14 +190,22 @@ body {
   }
 
 .input-small {
-  padding:  var(--xxs) var(--xs);
-}
+/*  padding:  var(--xxs) var(--xs);
+*/}
 
 .input-large {
-  padding:  9px var(--sm);
-  font-size: var(--typography-body-default-regular-font-size);
+/*  padding:  9px var(--sm);
+*/  font-size: var(--typography-body-default-regular-font-size);
   font-weight: var(--typography-body-default-regular-font-weight);
   line-height: var(--typography-body-default-regular-line-height);
+}
+.input-icon--right {
+  left: 12px;
+  top:  calc(50% - 8px);
+}
+.input-icon--left {
+  left: 12px;
+  top:  calc(50% - 8px);
 }
 
 
@@ -375,13 +384,23 @@ body {
 }
 .overlay {
   background-color: var(--color-global-primary-08);
-  z-index: 0;
   transition: var(--transition-default);
   opacity: 0;
-  width: 224px;
   height: 40px;
-  left: 8px;
+  left: 4px;
+  right: 4px;
 }
-.overlay.active {
-  opacity: 1;
+
+.overlayList {
+  background-color: var(--color-global-primary-08);
+  transition: var(--transition-default);
+  opacity: 0;
+  height: 40px;
 }
+
+
+/* scroll */
+.h-scroll {
+  overflow: scroll;
+}
+

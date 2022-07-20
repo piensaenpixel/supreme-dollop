@@ -247,6 +247,10 @@
 .h-colorText-white{
   color: var(--color-text-white);
 }
+.hover\:h-colorText-primary:hover {
+  color: var(--color-text-primary);
+  transition: var(--transition-default);
+}
 
 .h-colorText-greenTag{
   color: #93C90E ;
@@ -282,7 +286,20 @@
   background: #28A865; /* create token */
 }
 
+.h-modalBackground {
+  background: rgba(var(--color-background-modal), 0.4);
+}
 
+.h-opacity-0 {
+  opacity: 0;
+}
+.h-opacity-1 {
+  opacity: 1;
+}
+
+.h-animation {
+  transition:  var(--transition-default);
+}
 
 
 /* borders */
@@ -337,13 +354,25 @@
 
 }
 .dropdown-small {
-  width:  340px;
+  width: 340px;
 }
 .dropdown-medium {
-  width:  400px;
+  width: 400px;
 }
 .dropdown-large {
-  420px;
+  width: 480px;
+}
+
+
+/* modal */
+.modal-small {
+  width:  600px;
+}
+.modal-medium {
+  width: 720px;
+}
+.modal-large {
+  width: 880px;
 }
 
 
