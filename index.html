@@ -811,24 +811,24 @@
     });
 
 
-    const overlayCommand = document.querySelector('.js-overlay-command');
-    const command_list = document.querySelectorAll('.js-commandItem');
+    // const overlayCommand = document.querySelector('.js-overlay-command');
+    // const command_list = document.querySelectorAll('.js-commandItem');
 
-    command_list.forEach((list) => {
-      list.addEventListener('mouseover', () => {
-        let position = list.getBoundingClientRect();
-        console.log(position);
-        overlayCommand.classList.remove('h-opacity-0');
-        overlayCommand.classList.add('h-opacity-1');
-        overlayCommand.style.top = (position.y - 216) + 'px';
-        overlayCommand.style.left = 12 + 'px';
-        overlayCommand.style.right = 12 + 'px';
-      });
-      list.addEventListener('mouseout', () => {
-        overlayCommand.classList.remove('h-opacity-1');
-        overlayCommand.classList.add('h-opacity-0');
-      });
-    });
+    // command_list.forEach((list) => {
+    //   list.addEventListener('mouseover', () => {
+    //     let position = list.getBoundingClientRect();
+    //     console.log(position);
+    //     overlayCommand.classList.remove('h-opacity-0');
+    //     overlayCommand.classList.add('h-opacity-1');
+    //     overlayCommand.style.top = (position.y - 124) + 'px';
+    //     overlayCommand.style.left = 12 + 'px';
+    //     overlayCommand.style.right = 12 + 'px';
+    //   });
+    //   list.addEventListener('mouseout', () => {
+    //     overlayCommand.classList.remove('h-opacity-1');
+    //     overlayCommand.classList.add('h-opacity-0');
+    //   });
+    // });
 
 
 
