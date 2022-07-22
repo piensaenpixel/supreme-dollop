@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/variables.css">
+  <link rel="stylesheet" type="text/css" href="css/tokens.css">
+  <link rel="stylesheet" type="text/css" href="css/spacing.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/helpers.css">
+
+</head>
+<body >
+  <div class="flex h-full-height p-2">
+    <aside style="width: 240px;" class="h-full-height h-radius h-white-background h-animation js-menu">
+      <button class="js-collapse h-clickable">collapse</button>
+    </aside>
+    <div class="h-full-height ml-1 flex flex-column flex-top flex-1">
+      <header class="mb-1">
+        cabecera
+      </header>
+      <div class="h-radius h-white-background h-full-width flex-1">
+        content
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var menu = document.querySelector('.js-menu');
+    var collapse = document.querySelector('.js-collapse');
+
+    collapse.addEventListener('click', function () {
+      if (menu.style.width == "240px") {
+        menu.style.width = "48px";
+      } else {
+        menu.style.width = "240px";
+      }
+    });
+
+
+  </script>
+</body>
+</html>

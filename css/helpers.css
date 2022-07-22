@@ -1,116 +1,173 @@
-/* typography */
+/*---- TYPOGRAPHY SIZES ---*/
 
-.h-fontSmall-regular {
+.h-font-small-regular {
   font-size: var(--typography-body-small-regular-font-size);
   font-weight: var(--typography-body-small-regular-font-weight);
   line-height: var(--typography-body-small-regular-line-height);
 }
-
-.h-fontSmall-semi {
+.h-font-small-semi {
   font-size: var(--typography-body-small-semibold-font-size);
   font-weight: var(--typography-body-small-semibold-font-weight);
   line-height: var(--typography-body-small-semibold-line-height);
 }
-
-.h-fontMedium-regular {
+.h-font-medium-regular {
   font-size: var(--typography-body-medium-regular-font-size);
   font-weight: var(--typography-body-medium-regular-font-weight);
   line-height: var(--typography-body-medium-regular-line-height);
 }
-.h-fontMedium-semi {
+.h-font-medium-semi {
   font-size: var(--typography-body-medium-semibold-font-size);
   font-weight: var(--typography-body-medium-semibold-font-weight);
   line-height: var(--typography-body-medium-semibold-line-height);
 }
-
-.h-fontDefault-regular {
+.h-font-default-regular {
   font-size: var(--typography-body-default-regular-font-size);
   font-weight: var(--typography-body-default-regular-font-weight);
   line-height: var(--typography-body-default-regular-line-height);
 }
-.h-fontDefault-semi {
+.h-font-default-semi {
   font-size: var(--typography-body-default-semibold-font-size);
   font-weight: var(--typography-body-default-semibold-font-weight);
   line-height: var(--typography-body-default-semibold-line-height);
 }
-
-.h-fontLarge-regular {
+.h-font-large-regular {
   font-size: var(--typography-body-large-regular-font-size);
   font-weight: var(--typography-body-large-regular-font-weight);
   line-height: var(--typography-body-large-regular-line-height);
 }
-.h-fontLarge-semi {
+.h-font-large-semi {
   font-size: var(--typography-body-large-semibold-font-size);
   font-weight: var(--typography-body-large-semibold-font-weight);
   line-height: var(--typography-body-large-semibold-line-height);
 }
-
-
-.h-titleSmall-regular {
+.h-title-small-regular {
   font-size: var(--typography-header-small-regular-font-size);
   font-weight: var(--typography-header-small-regular-font-weight);
   line-height: var(--typography-header-small-regular-line-height);
 }
-.h-titleSmall-semi {
+.h-title-small-semi {
   font-size: var(--typography-header-small-semibold-font-size);
   font-weight: var(--typography-header-small-semibold-font-weight);
   line-height: var(--typography-header-small-semibold-line-height);
 }
-.h-titleMedium-regular {
+.h-title-medium-regular {
   font-size: var(--typography-header-medium-regular-font-size);
   font-weight: var(--typography-header-medium-regular-font-weight);
   line-height: var(--typography-header-medium-regular-line-height);
 }
-.h-titleMedium-semi {
+.h-title-medium-semi {
   font-size: var(--typography-header-medium-semibold-font-size);
   font-weight: var(--typography-header-medium-semibold-font-weight);
   line-height: var(--typography-header-medium-semibold-line-height);
 }
-.h-titleDefault-regular {
+.h-title-default-regular {
   font-size: var(--typography-header-default-regular-font-size);
   font-weight: var(--typography-header-default-regular-font-weight);
   line-height: var(--typography-header-default-regular-line-height);
 }
-.h-titleDefault-semi {
+.h-title-default-semi {
   font-size: var(--typography-header-default-semibold-font-size);
   font-weight: var(--typography-header-default-semibold-font-weight);
   line-height: var(--typography-header-default-semibold-line-height);
 }
-.h-titleLarge-regular {
+.h-title-large-regular {
   font-size: var(--typography-header-large-regular-font-size);
   font-weight: var(--typography-header-large-regular-font-weight);
   line-height: var(--typography-header-large-regular-line-height);
 }
-.h-titleLarge-semi {
+.h-title-large-semi {
   font-size: var(--typography-header-large-semibold-font-size);
   font-weight: var(--typography-header-large-semibold-font-weight);
   line-height: var(--typography-header-large-semibold-line-height);
 }
 
-.h-txtRight {
+
+/*---- TYPOGRAPHY COLORS ---*/
+
+.h-color-text-primary {
+  color: var(--color-text-primary);
+}
+  .hover\:h-color-text-primary:hover {
+    color: var(--color-text-primary);
+    transition: var(--transition-default);
+  }
+
+.h-color-text-secondary{
+  color: var(--color-text-secondary);
+}
+  .hover\:h-color-text-secondary:hover {
+    color: var(--color-text-secondary);
+    transition: var(--transition-default);
+  }
+
+.h-color-text-tertiary {
+  color: var(--color-text-tertiary);
+}
+  .hover\:h-color-text-tertiary:hover {
+    color: var(--color-text-tertiary);
+    transition: var(--transition-default);
+  }
+
+.h-color-text-white{
+  color: var(--color-text-white);
+}
+  .hover\:h-color-text-white:hover {
+    color: var(--color-text-white);
+    transition: var(--transition-default);
+  }
+
+.h-color-text-green-tag{
+  color: #93C90E; /* move to token */
+}
+  .hover\:h-color-green-tag:hover {
+    color: #93C90E; /* move to token */
+    transition: var(--transition-default);
+  }
+
+.h-color-text-pink-tag{
+  color: #CF66FA;
+}
+  .hover\:h-color-pink-tag:hover {
+    color: #CF66FA; /* move to token */
+    transition: var(--transition-default);
+  }
+
+
+/*---- TYPOGRAPHY ALIGNMENT ---*/
+
+.h-txt-right {
   text-align: right;
 }
-.h-txtLeft {
+.h-txt-left {
   text-align: left;
 }
-.h-txtCenter {
+.h-txt-center {
   text-align: center;
 }
 
 
+/*---- TYPOGRAPHY TRANSFORMATION ---*/
 
-/* flex stuff */
-.full-spaceCenter {
+.h-upper {
+  text-transform: uppercase;
+}
+.h-lower {
+  text-transform: lowercase;
+}
+
+
+/*---- FLEX ---*/
+
+.full-space-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 10;
 }
-.full-spaceCenter > * {
+.full-space-center > * {
   flex-shrink: 0;
 }
-
 .allow-shrink {
   flex-shrink: 1;
 }
@@ -143,17 +200,17 @@
   align-items: flex-end;
   flex-shrink: 0;
 }
-.flex-betweenCenter {
+.flex-between-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.flex-betweenStart {
+.flex-between-start {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.flex-betweenEnd {
+.flex-between-end {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -165,64 +222,31 @@
   align-items: flex-end;
 }
 
+.flex-1 {
+  flex: 1;
+}
 
 
-/* mix */
+/*---- DISPLAY ---*/
+
 .h-block {
   display: block;
 }
 .h-none {
   display: none;
 }
-.h-maxShort {
-   max-width: calc(var(--xs) * 80); /* 640px */
-   width: 100%;
-}
-.h-maxShorter {
-   max-width: calc(var(--xs) * 68); /* 544px */
-   width: 100%;
-}
-.h-overflow {
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
-}
-
-.h-fullHeight {
-  height: 100%;
-}
-.h-fullWidth {
-  width: 100%;
-}
-
-.h-radius {
-  border-radius: var(--radius);
-}
-
-.h-clickable {
- cursor: pointer;
-}
-.h-cursorDefault {
- cursor: default;
-}
-.h-link {
-  color:  var(--color-global-primary);
-}
-  .h-link:hover {
-    text-decoration: underline;
-  }
 .h-hidden {
  display: none;
-}
- 
+} /* to consolidate with h-none*/
+
+
+/*---- POSITION ---*/
+
 .h-pr {
   position: relative;
 }
 .h-pa {
   position: absolute;
-}
-.h-upper {
-  text-transform: uppercase;
 }
 .z-1 {
   z-index: 1;
@@ -234,75 +258,111 @@
   z-index: 3;
 }
 
-/* colors */
-.h-colorText-primary {
-  color: var(--color-text-primary);
+
+/*---- WIDTHS ---*/
+
+.h-max-short {
+   max-width: calc(var(--xs) * 80); /* 640px */
+   width: 100%;
 }
-.h-colorText-secondary {
-  color: var(--color-text-secondary);
+.h-max-shorter {
+   max-width: calc(var(--xs) * 68); /* 544px */
+   width: 100%;
 }
-.h-colorText-tertiary{
-  color: var(--color-text-tertiary);
+.h-overflow {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
-.h-colorText-white{
-  color: var(--color-text-white);
-}
-.hover\:h-colorText-primary:hover {
-  color: var(--color-text-primary);
-  transition: var(--transition-default);
+.h-full-width {
+  width: 100%;
 }
 
-.h-colorText-greenTag{
-  color: #93C90E ;
-}
-.h-colorText-pinkTag{
-  color: #CF66FA;
+
+/*---- HEIGHTS ---*/
+
+.h-full-height {
+  height: 100%;
 }
 
-.h-whiteBackground {
+
+
+
+
+
+/*---- BACKGROUND COLORS ---*/
+
+.h-white-background {
   background: var(--color-global-white);
 }
+  .hover\:h-white-background:hover {
+    background: var(--color-global-white);
+    transition: var(--transition-default);
+  }
 
-.h-greyBackground-medium {
+  .h-white-background--0 {
+    background: rgba(255,255,255,0);
+  }
+    .hover\:h-white-background--1:hover {
+      background: rgba(255,255,255,1);
+      transition: var(--transition-default);
+    }
+
+.h-grey-background-dark {
+  background: var(--color-text-primary); /* move to background token instead of text */
+}
+  .hover\:h-grey-background-dark:hover {
+    background: var(--color-text-primary);
+    transition: var(--transition-default);
+  }
+.h-grey-background-medium {
   background: var(--color-background-medium);
 }
-
-.h-greyBackground-light {
+  .hover\:h-grey-background-medium:hover {
+    background: var(--color-background-medium);
+    transition: var(--transition-default);
+  }
+.h-grey-background-light {
   background: var(--color-background-light);
 }
-
-.h-greenBackground-tag {
-  background: #EEF6D8;
+  .hover\:h-grey-background-light:hover {
+    background: var(--color-background-light);
+    transition: var(--transition-default);
+  }
+.h-green-background {
+  background: #28A865; /* move to token notification */
 }
-.h-pinkBackground-tag {
-  background: #F3E2FA;
+  .hover\:h-green-background:hover {
+    background: #28A865;
+    transition: var(--transition-default);
+  }
+.h-green-background-tag {
+  background: #EEF6D8; /* create token */
 }
-
-.h-greyBackground-dark {
-  background: var(--color-text-primary:);
+  .hover\:h-green-background-tag:hover {
+    background: #EEF6D8;
+    transition: var(--transition-default);
+  }
+.h-pink-background-tag {
+  background: #F3E2FA; /* create token */
 }
-
-.h-greenBackground {
-  background: #28A865; /* create token */
-}
-
-.h-modalBackground {
+  .hover\:h-pink-background-tag:hover {
+    background: #F3E2FA;
+    transition: var(--transition-default);
+  }
+.h-modal-background {
   background: rgba(var(--color-background-modal), 0.4);
 }
-
-.h-opacity-0 {
-  opacity: 0;
+.h-global-primary-08 {
+  background: var(--color-global-primary-08);
 }
-.h-opacity-1 {
-  opacity: 1;
-}
+  .hover\:h-global-primary-08:hover {
+    background: var(--color-global-primary-08);
+    transition: var(--transition-default);
+  }
 
-.h-animation {
-  transition:  var(--transition-default);
-}
+/*---- BORDERS ---*/
 
-
-/* borders */
 .h-border {
   border-width:  1px;
 }
@@ -314,45 +374,37 @@
   border-left-width: 1px;
   border-right-width: 1px;
 }
-
-.h-borderTop {
+.h-border-top {
   border-top-width: 1px;
 }
-.h-borderRight {
+.h-border-right {
   border-top-width: 1px;
 }
-.h-borderLeft {
+.h-border-left {
   border-left-width: 1px;
 }
-.h-borderRight {
+.h-border-right {
   border-right-width: 1px;
 }
-.h-borderBottom {
+.h-border-bottom {
   border-bottom-width: 1px;
 }
-.h-borderHard {
+.h-border-hard {
   border-color: var(--color-border-hard);
   border-style: solid;
 }
-.h-borderMedium {
+.h-border-medium {
   border-color: var(--color-border-medium);
   border-style: solid;
 }
-.h-borderLight {
+.h-border-light {
   border-color: var(--color-border-light);
   border-style: solid;
 }
 
 
-/* shadows */
-.h-boxShadow-soft {
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-}
+/*---- DROPDOWNS SIZES ---*/
 
-/* drodpowns */
-.dropdown {
-
-}
 .dropdown-small {
   width: 340px;
 }
@@ -364,9 +416,10 @@
 }
 
 
-/* modal */
+/*---- MODAL SIZES ---*/
+
 .modal-small {
-  width:  600px;
+  width: 600px;
 }
 .modal-medium {
   width: 720px;
@@ -376,7 +429,55 @@
 }
 
 
-/* animations */
+/*---- SHADOWS ---*/
+
+.h-box-shadow-soft {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+}
+.h-box-shadow-medium {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+}
+.h-box-shadow-hard {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+
+
+/*---- OPACITY ---*/
+
+.h-opacity-0 {
+  opacity: 0;
+}
+.h-opacity-1 {
+  opacity: 1;
+}
+
+
+/*---- GENERIC ---*/
+
+.h-radius {
+  border-radius: var(--radius);
+}
+.h-clickable {
+ cursor: pointer;
+}
+.h-cursor-default {
+ cursor: default;
+}
+.h-link {
+  color:  var(--color-global-primary);
+}
+  .h-link:hover {
+    text-decoration: underline;
+  }
+
+
+/*---- ANIMATION ---*/
+
+.h-animation {
+  transition: var(--transition-default);
+}
+
+
 @keyframes shrink-bounce{
   0%{
     transform: scale(1);
