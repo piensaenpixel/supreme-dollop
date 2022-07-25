@@ -377,7 +377,7 @@ body {
 
 
 
-/* menu */
+/* MENU */
 
 .icon.is-active {
   background: var(--color-text-primary);
@@ -397,10 +397,15 @@ body {
   opacity: 0;
   height: 40px;
 }
-
-
-/* scroll */
-.h-scroll {
-  overflow: scroll;
+.menu-separator {
+  height: 14px;
 }
+.menu-separator-line {
+  height: 1px;
+  background: var(--color-background-medium);
+  width: 100%;
+}
+
+
+
 

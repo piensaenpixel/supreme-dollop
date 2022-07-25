@@ -155,6 +155,10 @@
   text-transform: lowercase;
 }
 
+.h-nowrap {
+  white-space: nowrap
+}
+
 
 /*---- FLEX ---*/
 
@@ -276,6 +280,16 @@
 }
 .h-full-width {
   width: 100%;
+}
+
+
+/* OVERFLOW */
+
+.h-scroll {
+  overflow: scroll;
+}
+.h-overflow-hidden {
+  overflow: hidden;
 }
 
 
