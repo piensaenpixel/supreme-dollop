@@ -702,14 +702,58 @@
           </div>
         </div>
       </aside>
-    <div class="h-full-height ml-1 flex flex-column flex-top flex-1">
-      <header class="mb-1">
-        cabecera
+    <section class="h-full-height ml-1 flex flex-column flex-top flex-1">
+      <header class="mb-1 flex-between-center h-full-width">
+        <div class="flex">
+            <h1 class="mr-2 h-font-large-semi h-color-text-primary">Home</h1>
+            <select name="select">
+              <option value="value1" selected>Health Dashboard</option>
+              <option value="value2">Financial Dashboard</option>
+              <option value="value3">Performance</option>
+            </select>
+        </div>
+        <div class="flex">
+          <button class="button button--large is-main">New workflow</button>
+
+        </div>
       </header>
-      <div class="h-radius h-white-background h-full-width flex-1">
-        content
-      </div>
-    </div>
+      <main class="h-radius h-full-width flex-1">
+
+        <table class="h-full-width h-color-text-secondary" cellpadding="0" cellspacing="0">
+          <tr>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">favorite</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Name</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Origin</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Using in...</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Last updated</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Events per sec</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Bytes per sec</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Type</th>
+            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">&nbsp;</th>
+          </tr>
+          <tr>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">favorite</td>
+            <td class="h-font-default-semi h-border-bottom h-border-medium pv-2 ph-1 h-txt-left h-color-text-primary">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">Syslog</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">Syslog</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">02/02/2022 - 05:41</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">210,000</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">1340,00</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">PUSH</td>
+            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">actions</td>
+          </tr>
+        </table>
+      </main>
+    </section>
   </div>
 
 
