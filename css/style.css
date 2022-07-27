@@ -407,5 +407,15 @@ body {
 }
 
 
+/* TABLE */
+.table-action {
+  width:  24px;
+}
+.table-main {
+  width: 30%;
+}
+.table-select {
+  width: 16px;
+}
 
 

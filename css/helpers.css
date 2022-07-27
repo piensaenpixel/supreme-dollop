@@ -1,3 +1,8 @@
+/*---- TYPOGRAPHY  ---*/
+.h-font-number {
+  font-family: 'PT Mono';
+}
+
 /*---- TYPOGRAPHY SIZES ---*/
 
 .h-font-small-regular {
@@ -132,6 +137,10 @@
     transition: var(--transition-default);
   }
 
+.h-color-text-green {
+  color: #46A324; /* move to token */
+}
+
 
 /*---- TYPOGRAPHY ALIGNMENT ---*/
 
@@ -219,12 +228,17 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .flex-right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 
 .flex-1 {
   flex: 1;
@@ -235,6 +249,9 @@
 
 .h-block {
   display: block;
+}
+.h-table {
+  display: table;
 }
 .h-none {
   display: none;
@@ -301,6 +318,16 @@
 
 
 
+/*---- VERTICAL-ALIGMENT ---*/
+.v-align-top {
+  vertical-align: top;
+}
+.v-align-middle {
+  vertical-align: middle;
+}
+.v-align-bottom {
+  vertical-align: bottom;
+}
 
 
 
@@ -471,6 +498,10 @@
 .h-radius {
   border-radius: var(--radius);
 }
+.h-radius-small {
+  border-radius: calc(var(--radius) / 2);
+}
+
 .h-clickable {
  cursor: pointer;
 }

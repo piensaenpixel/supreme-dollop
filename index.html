@@ -8,6 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/variables.css">
   <link rel="stylesheet" type="text/css" href="css/tokens.css">
@@ -717,23 +722,153 @@
 
         </div>
       </header>
-      <main class="h-radius h-full-width flex-1">
+      <main class="h-radius h-full-width flex-1 h-white-background h-radius pv-1">
 
-        <table class="h-full-width h-color-text-secondary" cellpadding="0" cellspacing="0">
+        <table class="h-full-width h-color-text-secondary h-table" cellpadding="0" cellspacing="0">
           <tr>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">favorite</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Name</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Origin</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Using in...</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Last updated</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Events per sec</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-right">Bytes per sec</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">Type</th>
-            <th class="h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-1 h-txt-left">&nbsp;</th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom  h-border-medium pv-1 ph-2 h-txt-left table-select h-color-text-tertiary">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="01" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="01">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-left table-name h-color-text-tertiary table-main">
+              <div class="flex">
+                  Name
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-left h-color-text-tertiary">
+              <div class="flex">
+                  Origin
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-left h-color-text-tertiary">
+              <div class="flex">
+                  Using in…
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-right h-color-text-tertiary">
+              <div class="flex-end">
+                  Last updated
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-right h-color-text-tertiary">
+              <div class="flex-end">
+                  Events per sec (AVG)
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-right h-color-text-tertiary">
+              <div class="flex-end">
+                  Bytes per sec (AVG)
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-left v-align-middle h-color-text-tertiary">
+              <div class="flex">
+                  Type
+                  <span class="flex flex-column ml-1 ">
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                    <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"/>
+                      </svg>
+                    </span>
+                  </span>
+              </div>
+            </th>
+            <th class="v-align-middle h-font-medium-regular h-upper h-border-bottom h-border-medium pv-1 ph-2 h-txt-left v-align-middle table-action">&nbsp;</th>
           </tr>
-          <tr>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">favorite</td>
-            <td class="h-font-default-semi h-border-bottom h-border-medium pv-2 ph-1 h-txt-left h-color-text-primary">
+          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
               <div class="flex">
                 <span class="flex mr-1">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -743,13 +878,437 @@
                 <span>Staging flow</span>  
               </div>          
             </td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">Syslog</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">Syslog</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">02/02/2022 - 05:41</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">210,000</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-right">1340,00</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">PUSH</td>
-            <td class="h-font-default-regular h-border-bottom h-border-medium pv-2 ph-1 h-txt-left">actions</td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Devo to Splunk </span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
+          </tr>          <tr class="h-animation hover:h-grey-background-light">
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <span class="h-pr">
+                  <input id="02" type="checkbox" class="checkbox h-pa" />
+                  <label class="checkbox-inner h-clickable flex h-pr" for="02">
+                    <span class="checkbox-square flex-center"></span>
+                  </label>
+                </span>
+              </div>
+            </td>
+            <td class="h-font-default-semi h-border-bottom h-border-light pv-1 ph-2 h-txt-left h-color-text-primary v-align-middle">
+              <div class="flex">
+                <span class="flex mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99997 11.3334L4.08131 13.7267L5.14664 9.26002L1.65997 6.27335L6.23664 5.90669L7.99997 1.66669L9.76331 5.90669L14.3406 6.27335L10.8533 9.26002L11.9186 13.7267L7.99997 11.3334Z" fill="#F2C94C"/>
+                  </svg>
+                </span>
+                <span>Staging flow</span>  
+              </div>          
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                Syslog
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end">
+                02/02/2022 - 05:41
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                210,000
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-right v-align-middle">
+              <div class="flex-end h-font-number h-color-text-green">
+                1340,00
+                <svg class="ml-0" width="16" height="16" viewBox="0 0 16 16" fill="#46A324" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6667 5.21866V13.3333H7.33336V5.21866L3.75736 8.79466L2.8147 7.85199L8.00003 2.66666L13.1854 7.85199L12.2427 8.79466L8.6667 5.21866Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <div class="flex">
+                <div class="h-font-small-regular pv-0 ph-1 h-green-background-tag h-color-text-green-tag h-radius h-upper">Push</div>
+              </div>
+            </td>
+            <td class="h-font-default-regular h-border-bottom h-border-light pv-1 ph-2 h-txt-left v-align-middle">
+              <button class="flex h-clickable hover:h-global-primary-08 h-radius ph-0 pv-0">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00002 2C7.26669 2 6.66669 2.6 6.66669 3.33333C6.66669 4.06667 7.26669 4.66667 8.00002 4.66667C8.73335 4.66667 9.33335 4.06667 9.33335 3.33333C9.33335 2.6 8.73335 2 8.00002 2ZM8.00002 11.3333C7.26669 11.3333 6.66669 11.9333 6.66669 12.6667C6.66669 13.4 7.26669 14 8.00002 14C8.73335 14 9.33335 13.4 9.33335 12.6667C9.33335 11.9333 8.73335 11.3333 8.00002 11.3333ZM8.00002 6.66667C7.26669 6.66667 6.66669 7.26667 6.66669 8C6.66669 8.73333 7.26669 9.33333 8.00002 9.33333C8.73335 9.33333 9.33335 8.73333 9.33335 8C9.33335 7.26667 8.73335 6.66667 8.00002 6.66667Z" fill="#717D89"/>
+                </svg>
+              </button>
+            </td>
           </tr>
         </table>
       </main>
