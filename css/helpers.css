@@ -401,6 +401,14 @@
     background: var(--color-global-primary-08);
     transition: var(--transition-default);
   }
+  
+.h-global-primary-04 {
+  background: var(--color-global-primary-04);
+}
+  .hover\:h-global-primary-04:hover {
+    background: var(--color-global-primary-04);
+    transition: var(--transition-default);
+  }
 
 /*---- BORDERS ---*/
 
