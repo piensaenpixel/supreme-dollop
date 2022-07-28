@@ -1,4 +1,54 @@
-/* 0 px */
+/* 2 px */
+.p-min {
+  padding: calc(var(--xxs) / 2) ;
+}
+.pt-min {
+  padding-top: calc(var(--xxs) / 2) ;
+}
+.pr-min {
+  padding-right: calc(var(--xxs) / 2) ;
+}
+.pb-min {
+  padding-bottom: calc(var(--xxs) / 2) ;
+}
+.pl-min {
+  padding-left: calc(var(--xxs) / 2) ;
+}
+.pv-min {
+  padding-top: calc(var(--xxs) / 2) ;
+  padding-bottom: calc(var(--xxs) / 2) ;
+}
+.ph-min {
+  padding-left: calc(var(--xxs) / 2) ;
+  padding-right: calc(var(--xxs) / 2) ;
+}
+
+.m-min {
+  margin: calc(var(--xxs) / 2) ;
+}
+.mt-min {
+  margin-top: calc(var(--xxs) / 2) ;
+}
+.mr-min {
+  margin-right: calc(var(--xxs) / 2) ;
+}
+.mb-min {
+  margin-bottom: calc(var(--xxs) / 2) ;
+}
+.ml-min {
+  margin-left: calc(var(--xxs) / 2) ;
+}
+.mv-min {
+  margin-top: calc(var(--xxs) / 2) ;
+  margin-bottom: calc(var(--xxs) / 2) ;
+}
+.mh-min {
+  margin-left: calc(var(--xxs) / 2) ;
+  margin-right: calc(var(--xxs) / 2) ;
+}
+
+
+/* 4 px */
 .p-0 {
   padding: var(--xxs);
 }

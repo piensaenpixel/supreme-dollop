@@ -63,6 +63,8 @@ body, html {
 body {
   font-family: 'Inter';
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 input {
   outline:  none;

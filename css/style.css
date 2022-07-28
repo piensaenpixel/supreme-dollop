@@ -12,7 +12,6 @@ body {
 
 /* tabs */
 .tabs {
-  margin-bottom: var(--xl);
   border-bottom:  1px solid var(--color-border-light);
   display: flex;
 }
@@ -20,6 +19,7 @@ body {
     font-size: var(--typography-body-default-regular-font-size);
     line-height: var(--typography-body-default-regular-line-height);
     font-weight: var(--typography-body-default-regular-font-weight);
+    flex: auto;
   }
   .tabs-itemLink {
     padding: var(--xs) var(--sm);
@@ -67,7 +67,7 @@ body {
   .segmented-link {
     display: flex;
     border-radius: var(--radius);
-    padding:  var(--xxs) var(--lg);
+    padding:  var(--xxs) 0;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -75,6 +75,7 @@ body {
     font-size: var(--typography-body-default-regular-font-size);
     line-height: var(--typography-body-default-regular-line-height);
     font-weight: var(--typography-body-default-regular-font-weight);
+    min-width: calc(var(--base) * 13);
   }
   .segmented-link.is-active {
     background: var(--color-global-white);
@@ -139,7 +140,7 @@ body {
     font-weight: var(--typography-body-medium-semibold-font-weight);
   }
   .button--small {
-    padding: var(--xxs) var(--md);
+    padding: var(--xxs) var(--xs);
     font-size: var(--typography-body-medium-regular-font-size);
     line-height: var(--typography-body-medium-regular-line-height);
     font-weight: var(--typography-body-medium-regular-font-weight);
