@@ -25,7 +25,7 @@
   <header class="h-border-bottom h-border-medium h-white-background p-2 flex-between-center">
     <div class="flex">
       <span class="h-border-right h-border-medium flex mr-2">
-        <button class="pv-1 ph-1 h-radius hover:h-global-primary-08 h-clickable flex mr-1">
+        <button class="p-0 h-radius hover:h-global-primary-08 h-clickable flex mr-2">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.21899 7.33336H13.3337V8.6667H5.21899L8.79499 12.2427L7.85233 13.1854L2.66699 8.00003L7.85233 2.8147L8.79499 3.75736L5.21899 7.33336Z" fill="#12263A"/>
           </svg>
@@ -53,8 +53,15 @@
     </div>
   </header>
   <div class="flex h-full-height">
-    <aside class="h-pr h-full-height h-white-background h-border-right h-border-medium flex flex-column h-sidebar">
-      <div class="mb-3 h-full-width pt-3">
+    <aside class="h-pr h-full-height h-white-background h-border-right h-border-medium flex flex-column h-sidebar h-pr">
+
+      <button class="p-0 flex h-radius h-radius hover:h-global-primary-08 h-clickable h-pa" style="right: -36px; top: 24px;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.99967 2H13.9997C14.1765 2 14.3461 2.07024 14.4711 2.19526C14.5961 2.32029 14.6663 2.48986 14.6663 2.66667V13.3333C14.6663 13.5101 14.5961 13.6797 14.4711 13.8047C14.3461 13.9298 14.1765 14 13.9997 14H1.99967C1.82286 14 1.65329 13.9298 1.52827 13.8047C1.40325 13.6797 1.33301 13.5101 1.33301 13.3333V2.66667C1.33301 2.48986 1.40325 2.32029 1.52827 2.19526C1.65329 2.07024 1.82286 2 1.99967 2ZM5.33301 3.33333H2.66634V12.6667H5.33301V3.33333ZM6.66634 3.33333V12.6667H13.333V3.33333H6.66634Z" fill="#717D89"/>
+        </svg>
+      </button>
+
+      <div class="mb-3 h-full-width pt-2">
         <ul class="tabs">
           <li class="tabs-item"><button class="tabs-itemLink is-active h-full-width" href="#">Inputs <span class="tabs-itemNumber">(20)</span></button></li>
           <li class="tabs-item"><button class="tabs-itemLink h-full-width" href="#">Actions <span class="tabs-itemNumber">(20)</span></button></li>
@@ -521,7 +528,7 @@
       </div>
     </aside>
     <main class="flex-1 h-full-height h-grey-background-medium">
-      workflow
+      
     </main>
   </div>
 
