@@ -534,15 +534,13 @@
       </div>
     </header>
     <div class="flex h-full-width flex-1">
-      <aside class="h-pr h-white-background h-border-right h-border-medium h-sidebar h-pr flex flex-column">
-          <button class="p-0 flex h-radius h-radius hover:h-global-primary-08 h-clickable h-pa" style="right: -36px; top: 24px;">
+      <aside class="h-pr h-white-background h-border-right h-border-medium h-sidebar h-pr flex flex-column h-animation js-menu" style="width: 320px;">
+          <button class="p-0 flex h-radius h-radius hover:h-global-primary-08 h-clickable h-pa js-collapse" style="right: -36px; top: 24px;">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.99967 2H13.9997C14.1765 2 14.3461 2.07024 14.4711 2.19526C14.5961 2.32029 14.6663 2.48986 14.6663 2.66667V13.3333C14.6663 13.5101 14.5961 13.6797 14.4711 13.8047C14.3461 13.9298 14.1765 14 13.9997 14H1.99967C1.82286 14 1.65329 13.9298 1.52827 13.8047C1.40325 13.6797 1.33301 13.5101 1.33301 13.3333V2.66667C1.33301 2.48986 1.40325 2.32029 1.52827 2.19526C1.65329 2.07024 1.82286 2 1.99967 2ZM5.33301 3.33333H2.66634V12.6667H5.33301V3.33333ZM6.66634 3.33333V12.6667H13.333V3.33333H6.66634Z" fill="#717D89"/>
             </svg>
           </button>
 
-
-          
           <div class="pv-2 h-overflow-hidden flex flex-column h-full-width">
             <div class="mb-3 h-full-width">
               <ul class="tabs">
@@ -1010,5 +1008,23 @@
       </main>
     </div>
   </div>
+
+  <script type="text/javascript">
+    var menu = document.querySelector('.js-menu');
+    var collapse = document.querySelector('.js-collapse');
+
+    collapse.addEventListener('click', function () {
+      if (menu.style.width == "320px") {
+        console.log("hola");
+        menu.style.width = "48px";
+      } else {
+        console.log("hola2");
+        menu.style.width = "320px";
+      }
+    });
+
+
+  </script>
+
 </body>
 </html>
