@@ -1,6 +1,6 @@
 :root {
   --color-global-primary: #0d7ff4;
-  --color-global-secondary: #1e0a3c;
+  --color-global-secondary: rgb(18, 38, 58);
   --color-global-secondary-60: rgba(30, 10, 60, 0.6);
   --color-global-white: #ffffff;
   --color-global-primary-60: rgba(13, 127, 244, 0.6);

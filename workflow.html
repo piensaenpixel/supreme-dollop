@@ -22,509 +22,993 @@
   <link rel="stylesheet" type="text/css" href="css/helpers.css">
 </head>
 <body>
-  <header class="h-border-bottom h-border-medium h-white-background p-2 flex-between-center">
-    <div class="flex">
-      <span class="h-border-right h-border-medium flex mr-2">
-        <button class="p-0 h-radius hover:h-global-primary-08 h-clickable flex mr-2">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.21899 7.33336H13.3337V8.6667H5.21899L8.79499 12.2427L7.85233 13.1854L2.66699 8.00003L7.85233 2.8147L8.79499 3.75736L5.21899 7.33336Z" fill="#12263A"/>
-          </svg>
-        </button>
-      </span>
-      <div class="flex mr-1">
-        <p class="h-font-large-regular h-color-text-secondary mr-0">Workflow:</p>
-        <p class="h-font-large-semi h-color-text-primary">Untitled workflow</p>
-      </div>
-      <button class="button button--medium is-ghost">Add tag</button>
-    </div>
-    <div class="flex">
+  <div class="flex flex-column h-full-height">
+    <header class="h-border-bottom h-border-medium h-white-background p-2 flex-between-center h-full-width">
       <div class="flex">
-        <p class="h-font-medium-regular">Autosaved version: v.1.0.2 •  <span class="h-color-text-tertiary">20 secs ago</span></p>
-        <button class="button button--medium is-ghost ml-2">Create version</button>
-      </div>
-      <ul class="flex">
-        <li>
-            <button class="button button--medium is-outline ml-2">Test data</button>
-        </li>
-        <li>
-            <button class="button button--medium is-main ml-2">Publish</button>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <div class="flex h-full-height">
-    <aside class="h-pr h-full-height h-white-background h-border-right h-border-mediumh-sidebar h-pr flex flex-column">
-      <button class="p-0 flex h-radius h-radius hover:h-global-primary-08 h-clickable h-pa" style="right: -36px; top: 24px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.99967 2H13.9997C14.1765 2 14.3461 2.07024 14.4711 2.19526C14.5961 2.32029 14.6663 2.48986 14.6663 2.66667V13.3333C14.6663 13.5101 14.5961 13.6797 14.4711 13.8047C14.3461 13.9298 14.1765 14 13.9997 14H1.99967C1.82286 14 1.65329 13.9298 1.52827 13.8047C1.40325 13.6797 1.33301 13.5101 1.33301 13.3333V2.66667C1.33301 2.48986 1.40325 2.32029 1.52827 2.19526C1.65329 2.07024 1.82286 2 1.99967 2ZM5.33301 3.33333H2.66634V12.6667H5.33301V3.33333ZM6.66634 3.33333V12.6667H13.333V3.33333H6.66634Z" fill="#717D89"/>
-        </svg>
-      </button>
-      <div class="pv-2 h-overflow-hidden flex-1 flex flex-column">
-        <div class="mb-3 h-full-width">
-          <ul class="tabs">
-            <li class="tabs-item"><button class="tabs-itemLink is-active h-full-width" href="#">Inputs <span class="tabs-itemNumber">(20)</span></button></li>
-            <li class="tabs-item"><button class="tabs-itemLink h-full-width" href="#">Actions <span class="tabs-itemNumber">(20)</span></button></li>
-            <li class="tabs-item"><button class="tabs-itemLink h-full-width" href="#">Outputs <span class="tabs-itemNumber">(20)</span></button></li>
-          </ul>
-        </div>
-        <div class="ph-2 mb-3 h-full-width">
-          <div class="input p-1 h-pr flex">
-            <span class="mr-1">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0206 11.078L14.876 13.9327L13.9326 14.876L11.078 12.0207C10.0158 12.8722 8.69465 13.3353 7.33331 13.3333C4.02131 13.3333 1.33331 10.6453 1.33331 7.33334C1.33331 4.02134 4.02131 1.33334 7.33331 1.33334C10.6453 1.33334 13.3333 4.02134 13.3333 7.33334C13.3352 8.69468 12.8721 10.0158 12.0206 11.078ZM10.6833 10.5833C11.5294 9.71327 12.0019 8.54696 12 7.33334C12 4.75468 9.91131 2.66668 7.33331 2.66668C4.75465 2.66668 2.66665 4.75468 2.66665 7.33334C2.66665 9.91134 4.75465 12 7.33331 12C8.54693 12.0019 9.71324 11.5294 10.5833 10.6833L10.6833 10.5833Z" fill="#717D89"/>
-              </svg>
-            </span>
-
-            <input type="text" id="type" class="flex-1" name="type" placeholder="Search" />
-          </div>
-        </div>
-
-        <div class="h-full-width mb-3 h-border-bottom h-border-medium pb-2 ph-2">
-
-          <button class="button button--small is-ghost flex">
-            <span class="mr-0 flex">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="#0d7ff4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.33331 7.33331V3.33331H8.66665V7.33331H12.6666V8.66665H8.66665V12.6666H7.33331V8.66665H3.33331V7.33331H7.33331Z" />
-              </svg>
-            </span>
-            Add input
+        <span class="h-border-right h-border-medium flex mr-2">
+          <button class="p-0 h-radius hover:h-global-primary-08 h-clickable flex mr-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.21899 7.33336H13.3337V8.6667H5.21899L8.79499 12.2427L7.85233 13.1854L2.66699 8.00003L7.85233 2.8147L8.79499 3.75736L5.21899 7.33336Z" fill="#12263A"/>
+            </svg>
           </button>
+        </span>
+        <div class="flex mr-1">
+          <p class="h-font-large-regular h-color-text-secondary mr-0">Workflow:</p>
+          <p class="h-font-large-semi h-color-text-primary">Untitled workflow</p>
         </div>
-
-
-        <div class="ph-2 pb-1 h-full-width">
-          <ul class="segmented">
-            <li class="segmented-item">
-              <button class="segmented-link is-active">
-                <input type="radio" name="view" value="all" id="all"  class="segmented-input" />
-                <label class="segmented-label" for="all">
-                    All <span class="segmented-number">(20)</span>
-                </label>
-              </button>
-            </li>
-            <li class="segmented-item">
-              <button class="segmented-link">
-                <input type="radio" name="view" value="push" id="push" class="segmented-input" />
-                <label class="segmented-label" for="push">
-                    Push <span class="segmented-number">(20)</span>
-                </label>
-              </button>
-            </li>
-
-            <li class="segmented-item">
-              <button class="segmented-link">
-                <input type="radio" name="view" value="pull" id="pull"  class="segmented-input" />
-                <label class="segmented-label" for="pull">
-                    Pull <span class="segmented-number">(20)</span>
-                </label>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1 h-full-width p-2 h-scroll">
-            <div class="mb-2">
-              <h2 class="h-font-default-semi mb-1">Favorites <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h2>
-              <ul>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Staging flow</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch API</p>
-                </li>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Devo to Splunk</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="mb-2">
-              <h2 class="h-font-default-semi mb-1">Recents <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h2>
-              <ul>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Devo to Splunk</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                </li>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                </li>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Splunk to DD</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Splunk HEC</p>
-                </li>
-                <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                  <div class="flex">
-                    <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                      </svg>
-                    </span>
-                    <p class="h-font-medium-regular">Developme…. reduction</p>
-                  </div>
-                  <p class="h-font-medium-regular h-color-text-tertiary">Azure BS</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="mb-2">
-              <h2 class="h-font-default-semi mb-1">All Inputs <span class="h-font-medium-regular h-color-text-secondary">(90)</span></h2>
-              <div class="mb-1">
-                <div class="flex mb-0">
-                  <span class="mr-1">
-                    <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.99999 8.78133L11.3 5.48133L12.2427 6.424L7.99999 10.6667L3.75732 6.424L4.69999 5.48133L7.99999 8.78133Z" fill="#717D89"/>
-                      </svg>
-                    </button>
-                  </span>
-                  <h3 class="h-font-medium-semi">Amazon Kinesis Firehose <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
-                </div>
-                <ul>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-1">
-                <div class="flex mb-0">
-                  <span class="mr-1">
-                    <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
-                      </svg>
-                    </button>
-                  </span>
-                  <h3 class="h-font-medium-semi">Amazon Kinesis Streams <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
-                </div>
-                <ul class="h-none">
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-1">
-                <div class="flex mb-0">
-                  <span class="mr-1">
-                    <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
-                      </svg>
-                    </button>
-                  </span>
-                  <h3 class="h-font-medium-semi">Amazon SQS <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
-                </div>
-                <ul class="h-none">
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-1">
-                <div class="flex mb-0">
-                  <span class="mr-1">
-                    <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
-                      </svg>
-                    </button>
-                  </span>
-                  <h3 class="h-font-medium-semi">Amazon S3 <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
-                </div>
-                <ul class="h-none">
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-1">
-                <div class="flex mb-0">
-                  <span class="mr-1">
-                    <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
-                      </svg>
-                    </button>
-                  </span>
-                  <h3 class="h-font-medium-semi">Google Cloud Pub/Sub <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
-                </div>
-                <ul class="h-none">
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                      <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
-                        <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
-                      </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Splunk</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
-                  </li>
-                  <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
-
-                    <div class="flex">
-                      <span class="mr-1">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
-                        </svg>
-                      </span>
-                      <p class="h-font-medium-regular">Devo to Spl… DEV</p>
-                    </div>
-                    <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
+        <button class="button button--medium is-ghost">Add tag</button>
       </div>
-    </aside>
-    <main class="flex-1 h-full-height h-grey-background-medium">
-      
-    </main>
-  </div>
+      <div class="flex">
+        <div class="flex">
+          <p class="h-font-medium-regular">Autosaved version: v.1.0.2 •  <span class="h-color-text-tertiary">20 secs ago</span></p>
+          <button class="button button--medium is-ghost ml-2">Create version</button>
+        </div>
+        <ul class="flex">
+          <li class="h-pr">
+              <button class="button button--medium is-outline ml-2">Test data</button>
+              <div class="h-pa p-3 h-box-shadow-soft h-border h-border-medium h-radius dropdown-extra-large h-white-background" style="right: 0; top: calc(100% + 4px)">
+                <h2 class="h-body-large-regular mb-3">Test workflow</h2>
+                <div class="flex mb-3">
+                  <ul class="radio-list is-horizontal flex-top">
+                    <li class="mr-3 h-pr">
+                      <input name="gender" id="male" type="radio" class="radio h-pa" checked />
+                      <label class="radio-inner h-clickable flex h-pr" for="male">
+                        <span class="radio-square flex-center"></span>
+                        <p class="radio-label h-font-default-regular ml-1">Inputs</p>
+                      </label>
+                    </li>
+                    <li class="h-pr">
+                      <input name="gender" id="female" type="radio" class="radio h-pa" />
+                      <label class="radio-inner h-clickable flex h-pr" for="female">
+                        <span class="radio-square flex-center"></span>
+                        <p class="radio-label h-font-default-regular ml-1">Sample data</p>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-2 container container--5-11">
+                  <div class="flex">
+                    <label for="type" class="h-font-default-regular h-block">Origin</label>
+                  </div>
+                  <div class="input p-1 h-pr flex">
+                    <input type="text" class="h-font-default-regular flex-1" id="type" name="type" placeholder="Select a origin" />
+                  </div>
+                </div>
+                <div class="mb-2 container container--5-11">
+                  <div class="flex">
+                    <label for="type" class="h-font-default-regular h-block">Number of events</label>
+                  </div>
+                  <div class="input p-1 h-pr flex">
+                    <input type="text" class="h-font-default-regular flex-1" id="type" name="type" placeholder="Events to test" />
+                  </div>
+                </div>
+                <div class="mb-2 container container--5-11">
+                  <div class="flex">
+                    <label for="type" class="h-font-default-regular h-block">Loop</label>
+                  </div>
+                  <div class="input p-1 h-pr flex">
+                    <input type="text" class="h-font-default-regular flex-1" id="type" name="type" placeholder="Select an option" />
+                  </div>
+                </div>
+                <div class="mb-2 container container--5-11">
+                  <div class="flex">
+                    <label for="type" class="h-font-default-regular h-block">Delay</label>
+                  </div>
+                  <div class="input p-1 h-pr flex">
+                    <input type="text" class="h-font-default-regular flex-1" id="type" name="type" placeholder="Delay between elements (ms)" />
+                  </div>
+                </div>
+                <div class="mb-2 container container--5-11">
+                  <div class="flex">
+                    <label for="type" class="h-font-default-regular h-block">Range</label>
+                  </div>
+                  <div class="input p-1 h-pr flex">
+                    <input type="text" class="h-font-default-regular flex-1" id="type" name="type" value="06/21/2022 - 06/21/2022 GMT+2 (Madrid, Paris)" placeholder="Delay between elements (ms)" />
+                    <div class="h-pa  h-box-shadow-soft h-border h-border-medium h-radius dropdown-extra-large h-white-background" style="right: 0; top: calc(100% + 4px)">
+                      <div class="container container--5-11">
+                        <ul class="pv-2 pl-2 pr-1 h-border-right h-border-medium h-full-height">
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">Today</button>
+                          </li>
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">Yesterday</button>
+                          </li>
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">This week</button>
+                          </li>
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">Last week</button>
+                          </li>
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">This month</button>
+                          </li>
+                          <li class="mb-1">
+                            <button class="button button--small is-ghost">Last month</button>
+                          </li>
+                          <li>
+                            <button class="button button--small is-ghost">Custom range</button>
+                          </li>
+                        </ul>
+                        <div class="pv-2 pl-1 pr-2 flex-between-start gap-1">
+                          <div class="h-font-medium-regular h-full-height flex-column flex-between-start">
+                            <div class="mb-2">
+                              <div class="mb-1 flex h-font-default-semi">
+                                <span class="flex mr-1 gap-0 h-clickable">
+                                  Jun
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00048 8.78145L11.3005 5.48145L12.2431 6.42411L8.00048 10.6668L3.75781 6.42411L4.70048 5.48145L8.00048 8.78145Z"/>
+                                  </svg>
+                                </span>
+                                <span class="flex mr-1 gap-0 h-clickable">
+                                  2022
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00048 8.78145L11.3005 5.48145L12.2431 6.42411L8.00048 10.6668L3.75781 6.42411L4.70048 5.48145L8.00048 8.78145Z"/>
+                                  </svg>
+                                </span>
+                              </div>  
+                               <ul class="h-color-text-secondary flex mb-0">
+                                 <li class="flex-center day">S</li>
+                                 <li class="flex-center day">M</li>
+                                 <li class="flex-center day">T</li>
+                                 <li class="flex-center day">W</li>
+                                 <li class="flex-center day">T</li>
+                                 <li class="flex-center day">F</li>
+                                 <li class="flex-center day">S</li>
+                               </ul>
+                               <ul class="h-color-text-primary flex mb-0">
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">1</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">2</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">3</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">4</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">5</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">6</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">7</button>
+                                 </li>
+                               </ul>
+                               <ul class="h-color-text-primary flex mb-0">
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">8</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">9</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">10</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">11</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">12</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">13</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">14</button>
+                                 </li>
+                               </ul>
+                               <ul class="h-color-text-primary flex mb-0">
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">15</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">16</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">17</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">18</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">19</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day">20</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range is-first"><span class="day-selected flex-center">21</span></button>
+                                 </li>
+                               </ul>
+                               <ul class="h-color-text-primary flex mb-0">
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range is-first">22</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">23</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">24</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">25</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">26</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">27</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range is-last">28</button>
+                                 </li>
+                               </ul>
+                               <ul class="h-color-text-primary flex mb-0">
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range is-first">29</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range">30</button>
+                                 </li>
+                                 <li class="flex-center">
+                                    <button class="h-clickable day is-range is-last">31</button>
+                                 </li>
+                               </ul>
+                            </div>
+                            <div class="flex gap-0">
+                              <span class="flex">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.00065 14.6666C4.31865 14.6666 1.33398 11.6819 1.33398 7.99992C1.33398 4.31792 4.31865 1.33325 8.00065 1.33325C11.6827 1.33325 14.6673 4.31792 14.6673 7.99992C14.6673 11.6819 11.6827 14.6666 8.00065 14.6666ZM8.00065 13.3333C9.41514 13.3333 10.7717 12.7713 11.7719 11.7712C12.7721 10.771 13.334 9.41441 13.334 7.99992C13.334 6.58543 12.7721 5.22888 11.7719 4.22868C10.7717 3.22849 9.41514 2.66659 8.00065 2.66659C6.58616 2.66659 5.22961 3.22849 4.22941 4.22868C3.22922 5.22888 2.66732 6.58543 2.66732 7.99992C2.66732 9.41441 3.22922 10.771 4.22941 11.7712C5.22961 12.7713 6.58616 13.3333 8.00065 13.3333ZM8.66732 7.99992H11.334V9.33325H7.33398V4.66658H8.66732V7.99992Z"/>
+                                </svg>
+                              </span>
+                              <div class="flex">
+                                08
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                                :
+                              </div>
+                              <div class="flex">
+                                35
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                                :
+                              </div>
+                              <div class="flex">
+                                00
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
 
+                          </div>
+                          <div class="h-font-medium-regular h-full-height flex-column flex-between-start">
+                            <div class="mb-2">
+                              <div class="mb-1 flex h-font-default-semi">
+                                <span class="flex mr-1 gap-0 h-clickable">
+                                  Jul
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00048 8.78145L11.3005 5.48145L12.2431 6.42411L8.00048 10.6668L3.75781 6.42411L4.70048 5.48145L8.00048 8.78145Z"/>
+                                  </svg>
+                                </span>
+                                <span class="flex mr-1 gap-0 h-clickable">
+                                  2022
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00048 8.78145L11.3005 5.48145L12.2431 6.42411L8.00048 10.6668L3.75781 6.42411L4.70048 5.48145L8.00048 8.78145Z"/>
+                                  </svg>
+                                </span>
+                              </div>  
+                              <ul class="h-color-text-secondary flex mb-0">
+                                   <li class="flex-center day">S</li>
+                                   <li class="flex-center day">M</li>
+                                   <li class="flex-center day">T</li>
+                                   <li class="flex-center day">W</li>
+                                   <li class="flex-center day">T</li>
+                                   <li class="flex-center day">F</li>
+                                   <li class="flex-center day">S</li>
+                              </ul>
+                              <ul class="h-color-text-primary flex mb-0">
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-first">1</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">2</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">3</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">4</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">5</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">6</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-last">7</button>
+                                   </li>
+                              </ul>
+                              <ul class="h-color-text-primary flex mb-0">
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-first">8</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">9</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">10</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">11</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">12</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range">13</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-last">14</button>
+                                   </li>
+                              </ul>
+                              <ul class="h-color-text-primary flex mb-0">
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-first">15</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day is-range is-last"><span class="day-selected flex-center">16</span></button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">17</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">18</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">19</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">20</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">21</button>
+                                   </li>
+                              </ul>
+                              <ul class="h-color-text-primary flex mb-0">
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">22</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">23</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">24</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">25</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">26</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">27</button>
+                                   </li>
+                                   <li class="flex-center">
+                                      <button class="h-clickable day">28</button>
+                                   </li>
+                              </ul>
+                              <ul class="h-color-text-primary flex mb-0">
+                                <li class="flex-center">
+                                   <button class="h-clickable day">29</button>
+                                </li>
+                                <li class="flex-center">
+                                   <button class="h-clickable day">30</button>
+                                </li>
+                                <li class="flex-center">
+                                   <button class="h-clickable day">31</button>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="flex gap-0">
+                              <span class="flex">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.00065 14.6666C4.31865 14.6666 1.33398 11.6819 1.33398 7.99992C1.33398 4.31792 4.31865 1.33325 8.00065 1.33325C11.6827 1.33325 14.6673 4.31792 14.6673 7.99992C14.6673 11.6819 11.6827 14.6666 8.00065 14.6666ZM8.00065 13.3333C9.41514 13.3333 10.7717 12.7713 11.7719 11.7712C12.7721 10.771 13.334 9.41441 13.334 7.99992C13.334 6.58543 12.7721 5.22888 11.7719 4.22868C10.7717 3.22849 9.41514 2.66659 8.00065 2.66659C6.58616 2.66659 5.22961 3.22849 4.22941 4.22868C3.22922 5.22888 2.66732 6.58543 2.66732 7.99992C2.66732 9.41441 3.22922 10.771 4.22941 11.7712C5.22961 12.7713 6.58616 13.3333 8.00065 13.3333ZM8.66732 7.99992H11.334V9.33325H7.33398V4.66658H8.66732V7.99992Z"/>
+                                </svg>
+                              </span>
+                              <div class="flex">
+                                08
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                                :
+                              </div>
+                              <div class="flex">
+                                35
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                                :
+                              </div>
+                              <div class="flex">
+                                00
+                                <span class="flex flex-column mh-0 ">
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 5.414L3.52499 7.889L2.81799 7.182L5.99999 4L9.18199 7.182L8.47499 7.889L5.99999 5.414Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="flex h-clickable h-radius hover:h-global-primary-08 h-animation">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.99999 6.586L8.47499 4.111L9.18199 4.818L5.99999 8L2.81799 4.818L3.52499 4.111L5.99999 6.586Z" fill="#717D89"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="h-border-top h-border-medium ph-3 pv-2 flex-between-start h-full-width">
+                        <div>
+                          <div class="input p-0 h-pr flex">
+                            <select name="select">
+                              <option value="value1">GMT+1 London</option>
+                              <option value="value2" selected>GMT+2 Madrid, Lisboa</option>
+                              <option value="value3">GMT+3 Madagascar</option>
+                            </select>
+                          </div>
+                        </div>
+                        <ul class="flex">
+                          <li class="mr-1">
+                            <button class="button button--small is-ghost">Cancel</button>
+                          </li>
+                          <li>
+                            <button class="button button--small is-primary">Save</button>
+                          </li>
+
+
+                        </ul>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li>
+              <button class="button button--medium is-main ml-2">Publish</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="flex h-full-width flex-1">
+      <aside class="h-pr h-white-background h-border-right h-border-medium h-sidebar h-pr flex flex-column">
+          <button class="p-0 flex h-radius h-radius hover:h-global-primary-08 h-clickable h-pa" style="right: -36px; top: 24px;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.99967 2H13.9997C14.1765 2 14.3461 2.07024 14.4711 2.19526C14.5961 2.32029 14.6663 2.48986 14.6663 2.66667V13.3333C14.6663 13.5101 14.5961 13.6797 14.4711 13.8047C14.3461 13.9298 14.1765 14 13.9997 14H1.99967C1.82286 14 1.65329 13.9298 1.52827 13.8047C1.40325 13.6797 1.33301 13.5101 1.33301 13.3333V2.66667C1.33301 2.48986 1.40325 2.32029 1.52827 2.19526C1.65329 2.07024 1.82286 2 1.99967 2ZM5.33301 3.33333H2.66634V12.6667H5.33301V3.33333ZM6.66634 3.33333V12.6667H13.333V3.33333H6.66634Z" fill="#717D89"/>
+            </svg>
+          </button>
+
+
+          
+          <div class="pv-2 h-overflow-hidden flex flex-column h-full-width">
+            <div class="mb-3 h-full-width">
+              <ul class="tabs">
+                <li class="tabs-item"><button class="tabs-itemLink is-active h-full-width" href="#">Inputs <span class="tabs-itemNumber">(20)</span></button></li>
+                <li class="tabs-item"><button class="tabs-itemLink h-full-width" href="#">Actions <span class="tabs-itemNumber">(20)</span></button></li>
+                <li class="tabs-item"><button class="tabs-itemLink h-full-width" href="#">Outputs <span class="tabs-itemNumber">(20)</span></button></li>
+              </ul>
+            </div>
+            <div class="ph-2 mb-3 h-full-width">
+              <div class="input p-1 h-pr flex">
+                <span class="mr-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0206 11.078L14.876 13.9327L13.9326 14.876L11.078 12.0207C10.0158 12.8722 8.69465 13.3353 7.33331 13.3333C4.02131 13.3333 1.33331 10.6453 1.33331 7.33334C1.33331 4.02134 4.02131 1.33334 7.33331 1.33334C10.6453 1.33334 13.3333 4.02134 13.3333 7.33334C13.3352 8.69468 12.8721 10.0158 12.0206 11.078ZM10.6833 10.5833C11.5294 9.71327 12.0019 8.54696 12 7.33334C12 4.75468 9.91131 2.66668 7.33331 2.66668C4.75465 2.66668 2.66665 4.75468 2.66665 7.33334C2.66665 9.91134 4.75465 12 7.33331 12C8.54693 12.0019 9.71324 11.5294 10.5833 10.6833L10.6833 10.5833Z" fill="#717D89"/>
+                  </svg>
+                </span>
+
+                <input type="text" id="type" class="flex-1" name="type" placeholder="Search" />
+              </div>
+            </div>
+
+            <div class="h-full-width mb-3 h-border-bottom h-border-medium pb-2 ph-2">
+
+              <button class="button button--small is-ghost flex">
+                <span class="mr-0 flex">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#0d7ff4" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.33331 7.33331V3.33331H8.66665V7.33331H12.6666V8.66665H8.66665V12.6666H7.33331V8.66665H3.33331V7.33331H7.33331Z" />
+                  </svg>
+                </span>
+                Add input
+              </button>
+            </div>
+
+
+            <div class="ph-2 pb-1 h-full-width">
+              <ul class="segmented">
+                <li class="segmented-item">
+                  <button class="segmented-link is-active">
+                    <input type="radio" name="view" value="all" id="all"  class="segmented-input" />
+                    <label class="segmented-label" for="all">
+                        All <span class="segmented-number">(20)</span>
+                    </label>
+                  </button>
+                </li>
+                <li class="segmented-item">
+                  <button class="segmented-link">
+                    <input type="radio" name="view" value="push" id="push" class="segmented-input" />
+                    <label class="segmented-label" for="push">
+                        Push <span class="segmented-number">(20)</span>
+                    </label>
+                  </button>
+                </li>
+
+                <li class="segmented-item">
+                  <button class="segmented-link">
+                    <input type="radio" name="view" value="pull" id="pull"  class="segmented-input" />
+                    <label class="segmented-label" for="pull">
+                        Pull <span class="segmented-number">(20)</span>
+                    </label>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1 h-full-width p-2 h-scroll">
+                <div class="mb-2">
+                  <h2 class="h-font-default-semi mb-1">Favorites <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h2>
+                  <ul>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Staging flow</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch API</p>
+                    </li>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Devo to Splunk</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-2">
+                  <h2 class="h-font-default-semi mb-1">Recents <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h2>
+                  <ul>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Devo to Splunk</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                    </li>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                    </li>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Splunk to DD</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Splunk HEC</p>
+                    </li>
+                    <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                      <div class="flex">
+                        <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                          </svg>
+                        </span>
+                        <p class="h-font-medium-regular">Developme…. reduction</p>
+                      </div>
+                      <p class="h-font-medium-regular h-color-text-tertiary">Azure BS</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-2">
+                  <h2 class="h-font-default-semi mb-1">All Inputs <span class="h-font-medium-regular h-color-text-secondary">(90)</span></h2>
+                  <div class="mb-1">
+                    <div class="flex mb-0">
+                      <span class="mr-1">
+                        <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.99999 8.78133L11.3 5.48133L12.2427 6.424L7.99999 10.6667L3.75732 6.424L4.69999 5.48133L7.99999 8.78133Z" fill="#717D89"/>
+                          </svg>
+                        </button>
+                      </span>
+                      <h3 class="h-font-medium-semi">Amazon Kinesis Firehose <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
+                    </div>
+                    <ul>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-1">
+                    <div class="flex mb-0">
+                      <span class="mr-1">
+                        <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
+                          </svg>
+                        </button>
+                      </span>
+                      <h3 class="h-font-medium-semi">Amazon Kinesis Streams <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
+                    </div>
+                    <ul class="h-none">
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-1">
+                    <div class="flex mb-0">
+                      <span class="mr-1">
+                        <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
+                          </svg>
+                        </button>
+                      </span>
+                      <h3 class="h-font-medium-semi">Amazon SQS <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
+                    </div>
+                    <ul class="h-none">
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-1">
+                    <div class="flex mb-0">
+                      <span class="mr-1">
+                        <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
+                          </svg>
+                        </button>
+                      </span>
+                      <h3 class="h-font-medium-semi">Amazon S3 <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
+                    </div>
+                    <ul class="h-none">
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-1">
+                    <div class="flex mb-0">
+                      <span class="mr-1">
+                        <button class="p-0 hover:h-global-primary-08 h-radius h-clickable">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.78145 7.99999L5.48145 4.69999L6.42411 3.75732L10.6668 7.99999L6.42411 12.2427L5.48145 11.3L8.78145 7.99999Z" fill="#717D89"/>
+                          </svg>
+                        </button>
+                      </span>
+                      <h3 class="h-font-medium-semi">Google Cloud Pub/Sub <span class="h-font-medium-regular h-color-text-secondary">(2)</span></h3>
+                    </div>
+                    <ul class="h-none">
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                          <svg width="12" height="12" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg" fill="#F2C94C">
+                            <path d="M6 8.5L3.061 10.295L3.85999 6.945L1.245 4.705L4.6775 4.43L6 1.25L7.3225 4.43L10.7555 4.705L8.14 6.945L8.939 10.295L6 8.5Z"/>
+                          </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Splunk</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Splunk</p>
+                      </li>
+                      <li class="h-radius h-grey-background-light h-border h-border-transparent hover:h-global-primary-08 active:h-global-primary p-1 mb-1 flex-between-center h-dragabble active:h-grabbing">
+
+                        <div class="flex">
+                          <span class="mr-1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#717D89" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.00002 9.13L2.47352 11.104L3.26102 7.14L0.293518 4.396L4.30702 3.92L6.00002 0.25L7.69302 3.92L11.7065 4.396L8.73902 7.14L9.52652 11.104L6.00002 9.13ZM6.00002 7.984L8.12352 9.1725L7.64902 6.786L9.43552 5.1335L7.01902 4.847L6.00002 2.6375L4.98102 4.8475L2.56452 5.1335L4.35102 6.786L3.87652 9.1725L6.00002 7.984Z" />
+                            </svg>
+                          </span>
+                          <p class="h-font-medium-regular">Devo to Spl… DEV</p>
+                        </div>
+                        <p class="h-font-medium-regular h-color-text-tertiary">Elasticsearch</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </aside>
+      <main class="flex-1 h-full-height h-grey-background-medium">
+        
+      </main>
+    </div>
+  </div>
 </body>
 </html>

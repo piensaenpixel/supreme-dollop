@@ -142,6 +142,21 @@
 }
 
 
+/*---- ICON COLORS ---*/
+.h-icon-main {
+  fill: var(--color-global-primary);
+}
+.h-icon-default {
+  fill: var(--color-text-secondary);
+} 
+.h-icon-white {
+  fill: var(--color-text-white);
+}
+.h-icon-yellow {
+  fill: #F2C94C; /* move to token */
+} 
+
+
 /*---- TYPOGRAPHY ALIGNMENT ---*/
 
 .h-txt-right {
@@ -238,10 +253,29 @@
   justify-content: flex-end;
   align-items: center;
 }
-
-
 .flex-1 {
   flex: 1;
+}
+.flex-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: row;
+}
+
+
+/*---- GAPS ---*/
+.gap-0 {
+  gap: var(--xxs);
+}
+.gap-1 {
+  gap: var(--xs);
+}
+.gap-1 {
+  gap: calc(var(--xs) * 2);
+}
+.gap-3 {
+  gap: calc(var(--xs) * 3);
 }
 
 
