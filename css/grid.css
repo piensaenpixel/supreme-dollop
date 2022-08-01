@@ -5,6 +5,12 @@
   .is-l {
     gap: 0px var(--sm); 
   }
+  .no-gap {
+    gap:  0;
+  }
+  .gap-2-0 {
+    gap: 2px 0;
+  }
 
 .container--1 {
   grid-template-columns: 1fr; 
