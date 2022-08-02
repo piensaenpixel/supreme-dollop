@@ -342,6 +342,9 @@
 .h-full-width {
   width: 100%;
 }
+.h-width-auto {
+  width: auto;
+}
 
 
 /* OVERFLOW */
@@ -445,11 +448,19 @@
     background: var(--color-global-primary-08);
     transition: var(--transition-default);
   }
+  .focus\:h-global-primary-08:focus {
+    background: var(--color-global-primary-08);
+    transition: var(--transition-default);
+  }
   
 .h-global-primary-04 {
   background: var(--color-global-primary-04);
 }
   .hover\:h-global-primary-04:hover {
+    background: var(--color-global-primary-04);
+    transition: var(--transition-default);
+  }
+  .focus\:h-global-primary-04:focus {
     background: var(--color-global-primary-04);
     transition: var(--transition-default);
   }
@@ -501,12 +512,14 @@
   border-color: transparent;
   border-style: solid;
 }
-
   .active\:h-global-primary:active {
     border: 1px solid var(--color-global-primary);
     transition: var(--transition-default);
   }
-
+  .focus\:h-global-primary:focus {
+    border: 1px solid var(--color-global-primary);
+    transition: var(--transition-default);
+  }
 
 
 /*---- DROPDOWNS SIZES ---*/
@@ -520,11 +533,14 @@
 .dropdown-medium {
   width: 400px;
 }
-.dropdown-large {
+.dropdown-regular {
   width: 480px;
 }
-.dropdown-extra-large {
+.dropdown-large {
   width: 520px;
+}
+.dropdown-extra-large {
+  width: k600px;
 }
 
 
