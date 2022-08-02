@@ -454,6 +454,13 @@
     transition: var(--transition-default);
   }
 
+.h-background-pattern {
+  background-color: #f5f5f5;
+  opacity: 0.8;
+  background-image:  linear-gradient(#E6E8EB 1px, transparent 1px), linear-gradient(to right, #E6E8EB 1px, #f5f5f5 1px);
+  background-size: 20px 20px;
+}
+
 /*---- BORDERS ---*/
 
 .h-border {
