@@ -271,11 +271,46 @@
 .gap-1 {
   gap: var(--xs);
 }
-.gap-1 {
+.gap-2 {
   gap: calc(var(--xs) * 2);
 }
 .gap-3 {
   gap: calc(var(--xs) * 3);
+}
+.no-gap {
+  gap: 0;
+}
+
+.row-gap-0 {
+  row-gap: var(--xxs);
+}
+.row-gap-1 {
+  row-gap: var(--xs);
+}
+.row-gap-2 {
+  row-gap: calc(var(--xs) * 2);
+}
+.row-gap-3 {
+  row-gap: calc(var(--xs) * 3);
+}
+.no-row-gap {
+  row-gap: 0;
+}
+
+.column-gap-0 {
+  column-gap: var(--xxs);
+}
+.column-gap-1 {
+  column-: var(--xs);
+}
+.column-gap-2 {
+  column-gap: calc(var(--xs) * 2);
+}
+.column-gap-3 {
+  column-gap: calc(var(--xs) * 3);
+}
+.no-column-gap {
+  column-gap: 0;
 }
 
 
