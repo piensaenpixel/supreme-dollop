@@ -588,6 +588,9 @@
 .h-radius-small {
   border-radius: calc(var(--radius) / 2);
 }
+.h-radius-full {
+  border-radius: 100%;
+}
 
 .h-clickable {
  cursor: pointer;
