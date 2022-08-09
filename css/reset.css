@@ -75,3 +75,21 @@ input, select {
 a {
   text-decoration: none;
 }
+
+/* Mono font */
+
+@font-face {
+  font-family: Jet Brains Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/JetBrains/JetBrainsMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jet Brains Mono;
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/JetBrains/JetBrainsMono-Bold.ttf);
+}
+
+

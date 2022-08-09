@@ -1,6 +1,6 @@
 /*---- TYPOGRAPHY  ---*/
 .h-font-number {
-  font-family: 'PT Mono';
+  font-family: 'Jet Brains Mono';
 }
 
 /*---- TYPOGRAPHY SIZES ---*/
@@ -505,6 +505,24 @@
   background-image: radial-gradient(#E6E8EB 1px, transparent 1px);
   background-size: calc(8 * 1px) calc(8 * 1px);
 }
+
+.h-negative-background-tag {
+  background: #FF4D4D; /* create token */
+}
+  .hover\:h-negative-background-tag:hover {
+    background: #FF4D4D;
+    transition: var(--transition-default);
+  }
+
+.h-positive-background-tag {
+  background: #28A865; /* create token */
+}
+  .hover\:h-positive-background-tag:hover {
+    background: #28A865;
+    transition: var(--transition-default);
+  }
+
+
 
 /*---- BORDERS ---*/
 
