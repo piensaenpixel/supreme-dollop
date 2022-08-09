@@ -134,7 +134,7 @@ body {
   }
 
   .button--medium {
-    padding: var(--xs) var(--md);
+    padding: 7px var(--md);
     font-size: var(--typography-body-medium-semibold-font-size);
     line-height: var(--typography-body-medium-semibold-line-height);
     font-weight: var(--typography-body-medium-semibold-font-weight);
