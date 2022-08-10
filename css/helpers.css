@@ -359,6 +359,14 @@
    max-width: calc(var(--xs) * 68); /* 544px */
    width: 100%;
 }
+.h-max-small {
+   max-width: calc(var(--xs) * 50); /* 400px */
+   width: 100%;
+}
+.h-max-smaller {
+   max-width: calc(var(--xs) * 40); /* 320PX */
+   width: 100%;
+}
 .h-sidebar {
    max-width: calc(var(--xs) * 40); /* 320px */
    width: 100%;
